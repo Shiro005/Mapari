@@ -7,6 +7,7 @@ import {
     TrendingUp, Globe, Smartphone, Briefcase, Heart, Sparkles,
     Send, Wallet, Lock, ShieldCheck, Server, Database, Cpu, ShieldHalf
 } from 'lucide-react';
+import Header from './Header';
 
 const Home = () => {
     const [formData, setFormData] = useState({
@@ -146,15 +147,16 @@ const Home = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-x-hidden">
+            <Header />
             {/* Hero Section */}
             <motion.section
-                className="relative min-h-screen flex items-center justify-center overflow-hidden"
+                className="pt-10 relative min-h-screen flex items-center justify-center overflow-hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.2 }}
             >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-800 via-blue-900 to-slate-900">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/15"></div>
                     
                     {/* Animated grid background */}
                     <div className="absolute inset-0 opacity-20">
