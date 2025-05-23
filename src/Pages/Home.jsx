@@ -181,16 +181,16 @@ const Home = () => {
                         </motion.div>
 
                         <motion.div variants={fadeInUp}>
-                            <h1 className="text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent leading-tight">
+                            <h1 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent leading-tight">
                                 Aapla Sevek Online Services 
                             </h1>
-                            <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-blue-100">
+                            <h2 className="text-xl lg:text-2xl font-bold mb-6 text-blue-100">
                                 Your Trusted Online Partner
                             </h2>
                         </motion.div>
 
                         <motion.div variants={fadeInUp} className="mb-8">
-                            <p className="text-2xl lg:text-3xl font-semibold text-white mb-2">
+                            <p className="text-xl lg:text-xl font-semibold text-white mb-2">
                                 Vinod Murlidhar Mapari
                             </p>
                             <p className="text-lg lg:text-xl text-blue-200">
@@ -201,7 +201,7 @@ const Home = () => {
                         <motion.div variants={fadeInUp} className="mb-12">
                             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 max-w-4xl mx-auto">
                                 <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
-                                    Digital Services at Your Fingertips ⚡
+                                    Digital Services at Your Fingertips 
                                 </h3>
                                 <p className="text-lg lg:text-xl text-blue-100 mb-4">
                                     Fast, Reliable & Secure Online Solutions for Modern Needs
@@ -244,19 +244,10 @@ const Home = () => {
                     </motion.div>
                 </div>
 
-                <motion.div
-                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                >
-                    <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-                        <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
-                    </div>
-                </motion.div>
             </motion.section>
 
             {/* Contact Bar - Sticky */}
-            <motion.section
+            {/* <motion.section
                 className="py-4 bg-gradient-to-r from-slate-800 to-slate-900 text-white shadow-2xl sticky top-0 z-50"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -318,7 +309,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </motion.section>
+            </motion.section> */}
 
             {/* Services Section */}
             <motion.section
@@ -922,7 +913,7 @@ const Home = () => {
                                 <div className="flex items-start gap-3">
                                     <Mail className="w-5 h-5 text-blue-400 mt-1" />
                                     <div>
-                                        <p className="font-medium">vinod.mapari@apalasevek.com</p>
+                                        <p className="font-medium">vinod.mapari@aaplasevek.com</p>
                                         <p className="text-sm text-gray-400">Email Support</p>
                                     </div>
                                 </div>
@@ -944,7 +935,7 @@ const Home = () => {
                                 © 2024 Mapari Digital Services. All rights reserved.
                             </p>
                             <div className="flex items-center gap-6 text-sm text-gray-400">
-                                <span>Built with ❤️ for digital India</span>
+                                <span>Built with <a href="https://webreichtech.vercel.app/" className='text-bold text-orange-500'>WebReich</a></span>
                                 <div className="flex items-center gap-2">
                                     <Shield className="w-4 h-4 text-green-400" />
                                     <span>Secure & Verified</span>
